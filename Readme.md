@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Fedor Pestunov](https://up.htmlacademy.ru/adaptive/14/user/772819).
-* Наставник: Сэр Роберт Томпсон.
+* Наставник: []Сэр Роберт Томпсон](https://htmlacademy.ru/profile/id42701).
 
 ---
 
