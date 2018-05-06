@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>Седона</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="page-header">
     <nav class="main-nav">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="/">Главная</a></li>
+          <li class="site-list__item"><a href="index.html">Главная</a></li>
           <li class="site-list__item site-list__item--active">Фото и видео</li>
           <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
           <li class="site-list__item"><a href="#">HTML Academy</a></li>
@@ -17,50 +18,62 @@
       </div>
     </nav>
     <div class="page-header__logo logo">
-      <a class="logo__link">
-        <img class="logo__logotype" src="img/logotype-mobile.svg" width="50" height="50" alt="Седона">
-      </a>
-      <button class="logo__toggle" type="button">Открыть меню</button>
-      <img class="logo__image" src="img/sedona-second-page.jpg" width="150" height="50" alt="Седона">
+      <div class="logo__logotype">
+        <a href=#>
+          <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
+        </a>
+      </div>
+      <div class="logo__image">
+        <img class="logo__text-sedona" src="img/text-sedona.svg" width="280">
+        <img class="logo__intro-triangle" src="img/bg-intro-triangle-mobile.svg" width="320">
+      </div>
     </div>
   </header>
   <main class="page-main">
     <section class="foreword">
       <div class="foreword__wrapper">
         <h2 class="foreword__title">Фото и видео</h2>
-        <p class="foreword__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
+        <p class="foreword__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам&nbsp;забыть о политике и экономике</p>
       </div>
     </section>
     <section class="photos">
       <div class="photos__wrapper">
         <ul class="photos__list">
           <li class="photos__item photo-card">
-            <img class="photo-card__image" src="img/image-1.jpg" width="50" height="50" alt="Неродные просторы">
+            <div class="photo-card__wrapper">
+            <img class="photo-card__image" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
             <h3 class="photo-card__title">Неродные просторы</h3>
             <p class="photo-card__author">Автор фото: Борис</p>
-            <a class="photo-card__likeme-link" href="#"><img class="photos__item-likeme-icon" src="img/like-me.jpg" width="10" height="10" alt="Like!"></a>
-            <p class="photo-card__viewers">1350</p>
+            <a class="photo-card__likeme-link" href="#"><img class="photos__item-likeme-icon" src="img/icon-like.svg" alt="Like!"></a>
+            <span class="photo-card__viewers">1350</span>
+          </div>
           </li>
           <li class="photos__item photo-card">
-            <img class="photo-card__image" src="img/image-2.jpg" width="50" height="50" alt="Местная растительность">
+            <div class="photo-card__wrapper">
+            <img class="photo-card__image" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
             <h3 class="photo-card__title">Местная растительность</h3>
             <p class="photo-card__author">Автор фото: Сергей</p>
-            <a class="photo-card__likeme-link" href="#"><img class="photos__item-likeme-icon" src="img/like-me.jpg" width="10" height="10" alt="Like!"></a>
-            <p class="photo-card__viewers">143</p>
+            <a class="photo-card__likeme-link" href="#"><img class="photos__item-likeme-icon" src="img/icon-like.svg" alt="Like!"></a>
+            <span class="photo-card__viewers">143</span>
+            </div>
           </li>
           <li class="photos__item photo-card">
-            <img class="photo-card__image" src="img/image-3.jpg" width="50" height="50" alt="Дорога на серер">
+            <div class="photo-card__wrapper">
+            <img class="photo-card__image" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на серер">
             <h3 class="photo-card__title">Дорога на серер</h3>
             <p class="photo-card__author">Автор фото: Петр</p>
-            <a class="photo-card__likeme-link" href="#"><img class="photos__item-likeme-icon" src="img/like-me.jpg" width="10" height="10" alt="Like!"></a>
-            <p class="photo-card__viewers">96</p>
+            <a class="photo-card__likeme-link" href="#"><img class="photos__item-likeme-icon" src="img/icon-like.svg" alt="Like!"></a>
+            <span class="photo-card__viewers">96</span>
+            </div>
           </li>
           <li class="photos__item photo-card">
-            <img class="photo-card__image" src="img/image-4.jpg" width="50" height="50" alt="Мост Дьявола">
+            <div class="photo-card__wrapper">
+            <img class="photo-card__image" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост Дьявола">
             <h3 class="photo-card__title">Мост Дьявола</h3>
             <p class="photo-card__author">Автор фото: Антон</p>
-            <a class="photo-card__likeme-link" href="#"><img class="photos__item-likeme-icon" src="img/like-me.jpg" width="10" height="10" alt="Like!"></a>
-            <p class="photo-card__viewers">254</p>
+            <a class="photo-card__likeme-link" href="#"><img class="photos__item-likeme-icon" src="img/icon-like.svg" alt="Like!"></a>
+            <span class="photo-card__viewers">254</span>
+            </div>
           </li>
         </ul>
       </div>
@@ -68,8 +81,17 @@
     <section class="presentation">
       <div class="presentation__wrapper">
         <h2 class="presentation__title">Все еще сомневаетесь?</h2>
-        <p class="presentation__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <img class="presentation__video" src="img/presentation-video.jpg" width="100" height="100" alt="Видеопрезентация">
+        <p class="presentation__text">Смотрите видеопрезентацию и скорее&nbsp;за&nbsp;билетами, пока они не подорожали в очередной раз!</p>
+      </div>
+    </section>
+    <section class="video">
+      <div class="video__wrapper">
+        <img class="video__pleer" src="img/video-mobile@1x.jpg" width="320" height="201" alt="Видеопрезентация">
+        <div class="video__control">
+          <img src="img/icon-video-replay.svg">
+          <img src="img/icon-video-subtitles.svg">
+          <img src="img/icon-video-fullscreen.svg">
+        </div>
       </div>
     </section>
   </main>
@@ -81,18 +103,18 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Наш Твитер</a>
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" title="Наш Твитер"><img class="social__item-image" src="img/icon-twitter.svg"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Наш Фейсбук</a>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" title="Наш Фейсбук"><img class="social__item-image" src="img/icon-facebook.svg"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Наш канал на Youtube</a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" title="Наш канал на Youtube"><img class="social__item-image" src="img/icon-youtube.svg"></a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано <img src="img/logo-htmlacademy.svg"></a>
       </div>
     </div>
   </footer>
