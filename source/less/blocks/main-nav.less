@@ -1,49 +1,66 @@
+/*----- Base colors -----*/
+
+@base-color: rgb(110, 27, 255);
+@error-color: spin(@base-color, 60);
+@info-color: spin(@base-color, -60);
+@warning-color: spin(@base-color, 120);
+@success-color: spin(@base-color, -120);
+
+/*----- Menu colors -----*/
+
+@menu-bg: @bg-azure;
+@menu-bg--hover: @bg-azure-hover;
+@menu-bg--down: #5496bd;
+@menu-border-top: #9ac2db;
+@menu-border-bottom: #678fa8;
+
+/*----- Menu rules -----*/
+
 .main-nav {
   background-color: @bg-azure;
 }
 
-.site-list__item {
+.main-nav__item {
+  .reset-indents();
   text-align: center;
-  padding: 7px 20px;
   font-size: 18px;
   line-height: 40px;
   font-family: @font-family;
   color: @font-color-light;
   text-transform: uppercase;
   font-weight: bold;
-  border-top: 1px solid #9ac2db;
-  border-bottom: 1px solid #678fa8;
+  border-top: 1px solid @menu-border-top;
+  border-bottom: 1px solid @menu-border-bottom;
   list-style-type: none;
 }
 
-.site-list__item:first-child {
-  border-top: 1px solid #678fa8;
+.main-nav__item:first-child {
+  border-top: 1px solid @menu-bg;
 }
 
-.site-list__item:last-child {
-  border-bottom: 1px solid @bg-azure;
+.main-nav__item:last-child {
+  border-bottom: 1px solid #6d97b1;
+  box-shadow: inset 0 -30px 30px -30px #6d97b1;
 }
 
-.site-list__item:hover {
-  background-color: @bg-azure-hover;
-}
-
-.site-list__item a {
+.main-nav__link {
+  display: block;
+  padding: 7px 20px;
   text-decoration: none;
-}
 
-.site-list__item a:link {
-  color: @font-color-light;
-}
+  &:link,
+  &:visited {
+    color: @font-color-light;
+  }
 
-.site-list__item a:visited {
-  color: @font-color-light;
-}
+  &:hover {
+    color: @font-color-light;
+    background-color: @menu-bg--hover;
+  }
 
-.site-list__item a:hover {
-  color: @font-color-light;
-}
+  &:active {
+    opacity: 0.3;
+    background-color: @menu-bg--down;
+  }
 
-.site-list__item a:active {
-  color: #94b9d2;
 }
